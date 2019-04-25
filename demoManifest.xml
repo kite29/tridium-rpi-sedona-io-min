@@ -1,0 +1,7 @@
+<?xml version='1.0'?>
+<demoManifest
+    vendor="tridium"
+    platformId="demo-raspberrypi-unix-1.2.27"
+    demofile="tridium-rpi-sedona-io-min"
+/>
+
