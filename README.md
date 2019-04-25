@@ -5,7 +5,7 @@
 </b>
   If you have a Raspberry Pi, you can make it a Sedona Device in just a few minutes!  
 
-  See <a href='http://www.raspberrypi.org/faqs'>http://www.raspberrypi.org</a> to find out more about the Raspberry Pi, where 
+  See <a href='http://www.raspberrypi.org/faqs'>http://www.raspberrypi.org</a> to find out more about the Raspberry Pi, where
   to get one, and how to do the initial setup.
 
   This archive includes native support for accessing the Raspberry Pi GPIO pins.
@@ -26,7 +26,7 @@
    * is running a time service that syncs the device with network time (recommended)
 
 
-  2. Sedona Device Setup
+  2a. Sedona Device Setup
   ----------------------
     a. Copy this archive to the RPi (ssh, telnet, or direct copy to SD card).
 
@@ -37,7 +37,23 @@
     d. Start the Sedona VM as a background process:
          bin/svm --plat &
 
+  2b.  Alternative Device Setup
+  -----------------------------
+    a. Connect to your Raspberry Pi via ssh.
 
- Once the SVM is up and running, the device should be discoverable from your Niagara station 
+    b. Make sure your device is up to date and install git
+      - `sudo apt update`
+      - `sudo apt install git`
+
+    c. Clone this repository
+      - `git clone https://brettnreno/tridium-rpi-sedona-io-min.git`
+
+    d. Move to the cloned folder
+      - `cd tridium-rpi-sedona-io-min`
+
+    e. Start the Sedona VM as a background process:
+         `bin/svm --plat &`  
+
+
+ Once the SVM is up and running, the device should be discoverable from your Niagara station
  or Sedona Workbench through SedonaNetwork.  
-
